@@ -12,7 +12,7 @@ php artisan serve
 ---
 
 ## 2. Frontend Assets (Tailwind & Breeze)
-[cite_start]Since Assignment 7 uses Laravel Breeze, you need to compile your CSS and JavaScript files.
+Since Assignment 7 uses Laravel Breeze, you need to compile your CSS and JavaScript files.
 
 * **Install Dependencies:** `npm install`
 * **Hot Reload (Development):** `npm run dev`
