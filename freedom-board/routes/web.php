@@ -1,0 +1,25 @@
+<?php
+
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PostController;
+use Illuminate\Support\Facades\Route;
+
+// Redirect root to the board
+Route::get('/', function () {
+    return redirect()->route('posts.index');
+});
+
+// Anyone can view the board
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+
+// Only authenticated users can post or delete
+Route::middleware('auth')->group(function () {
+    Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
+    Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
+
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';

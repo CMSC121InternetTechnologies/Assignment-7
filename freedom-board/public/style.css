@@ -1,0 +1,163 @@
+/*
+ * FREEDOM BOARD STYLES
+ * Basic styling for readability and structuring nested threads
+ */
+
+body {
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+.nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.post {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.meta {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.delete-btn {
+    color: red;
+    text-decoration: none;
+    font-size: 0.85em;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font: inherit;
+}
+
+form {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button[type="submit"]{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+textarea[name="message"]{
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.thread-post {
+    border-left: 3px solid #007bff;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    padding: 10px 10px 10px 15px;
+    border-radius: 4px;
+}
+
+.reply-form {
+    display: none;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.reply-btn {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+}
+
+#reply-box{
+    height: 45.2px;
+    margin: 0%;
+}
+
+.reply-to-text {
+    font-size: 0.8em;
+    color: #888;
+    font-style: italic;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.message-text {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow-x: hidden;
+}
+
+.pagination {
+    margin-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.pagination-btn {
+    padding: 8px 12px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.pagination-btn:hover {
+    background: #0056b3;
+}
+
+.pagination-info {
+    font-weight: bold;
+}
+
+.inline {
+    display: inline;
+}
