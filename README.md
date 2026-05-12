@@ -6,9 +6,9 @@ To view your application in the browser, you must run the built-in development s
 
 ```bash
 composer install
-php artisan serve
 php artisan key:generate
 php artisan migrate
+php artisan serve
 ```
 
 ---
