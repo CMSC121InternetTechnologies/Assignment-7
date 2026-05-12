@@ -6,7 +6,9 @@ To view your application in the browser, you must run the built-in development s
 
 ```bash
 composer install
+cp .env.example .env
 php artisan key:generate
+touch database/database.sqlite
 php artisan migrate
 php artisan serve
 ```
