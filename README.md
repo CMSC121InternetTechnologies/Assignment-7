@@ -5,9 +5,11 @@
 To view your application in the browser, you must run the built-in development server. Ensure your terminal is at the project root (`/freedom-board`).
 
 ```bash
+composer install
 php artisan serve
+php artisan key:generate
+php artisan migrate
 ```
-**Access the site at:** `[insert link]`
 
 ---
 
